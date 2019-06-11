@@ -6,9 +6,9 @@ n=1000000
 fm=2000
 fcarrier=20000
 
-T=0.001
+T=2/(n-1)
 
-t=np.linspace(0,n*T,n)
+t=np.arange(0,0.001,T)
 m=np.sin(2*np.pi*fm*t)
 carrier= np.sin(2*np.pi*fcarrier*t)
 s=carrier*(1+k*m)
