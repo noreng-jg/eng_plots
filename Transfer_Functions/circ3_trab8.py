@@ -20,26 +20,26 @@ wb,magb,phaseb = signal.bode(vpb,w)
 ###########      PLOT VPA     ################
 figure(1)
 subplot(211)
-plot(w,maga);xscale('log')
+plot(w,maga);xscale('log');xlabel('Frequencia(Rad/S)');ylabel('Magnitude(dB)')
 
 subplot(212)
-plot(w,phasea);xscale('log')
+plot(w,phasea);xscale('log');xlabel('Frequencia(Rad/S)');ylabel('Fase(graus)')
 ###########        PLOT VPF     ###############
 
 figure(2)
 subplot(211)
-plot(w,magf);xscale('log')
+plot(w,magf);xscale('log');xlabel('Frequencia(Rad/S)');ylabel('Magnitude(dB)')
 
 subplot(212)
-plot(w,phasef);xscale('log')
+plot(w,phasef);xscale('log');xlabel('Frequencia(Rad/S)');ylabel('Fase(graus)')
 
 ###########             PLOT VPB        ###############
 figure(3)
 subplot(211)
-plot(w,magb);xscale('log')
+plot(w,magb);xscale('log');xlabel('Frequencia(Rad/S)');ylabel('Magnitude(dB)')
 
 subplot(212)
-plot(w,phaseb);xscale('log')
+plot(w,phaseb);xscale('log');xlabel('Frequencia(Rad/S)');ylabel('Fase(graus)')
 
 
 show()
